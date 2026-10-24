@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>My Phone ID</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="card">
+
+    <!-- Header -->
+    <div class="header">
+      <div class="logo">📱</div>
+      <div class="title">
+        <h1>MY PHONE ID</h1>
+        <p>DIGITAL IDENTITY CARD</p>
+      </div>
+      <canvas id="qr" width="80" height="80"></canvas>
+    </div>
+
+    <p class="tagline">
+      <span id="tagline">HP ini punya seseorang. Terima kasih sudah peduli.</span>
+      <button class="edit" data-target="tagline">✎</button>
+    </p>
+
+    <hr>
+
+    <!-- Pemilik -->
+    <div class="owner">
+      <div class="avatar">
+        <span id="avatarIcon">👤</span>
+        <img id="avatarImg" hidden>
+      </div>
+      <div>
+        <small>Nama Pemilik</small>
+        <h2><span id="nama">Adi Pratama</span> <button class="edit" data-target="nama">✎</button></h2>
+        <small>ID: <span id="idnum">MP-001234</span> <button class="edit" data-target="idnum">✎</button></small>
+      </div>
+    </div>
+    <button id="fotoBtn" class="link-btn">Ganti foto</button>
+    <input type="file" id="fotoFile" accept="image/*" hidden>
+
+    <hr>
+
+    <!-- Info -->
+    <div class="item">
+      <div class="icon">📞</div>
+      <div class="content">
+        <small>Nomor Kontak Alternatif</small>
+        <div id="telp">+62 812 3456 7890</div>
+      </div>
+      <button class="edit" data-target="telp">✎</button>
+    </div>
+
+    <div class="item">
+      <div class="icon">✉</div>
+      <div class="content">
+        <small>Email</small>
+        <div id="email">adipratama@email.com</div>
+      </div>
+      <button class="edit" data-target="email">✎</button>
+    </div>
+
+    <div class="item">
+      <div class="icon">📍</div>
+      <div class="content">
+        <small>Alamat (opsional)</small>
+        <div id="alamat">Jakarta, Indonesia</div>
+      </div>
+      <button class="edit" data-target="alamat">✎</button>
+    </div>
+
+    <div class="item">
+      <div class="icon">💬</div>
+      <div class="content">
+        <small>Pesan</small>
+        <div id="pesan">Terima kasih sudah menemukan HP ini.
+Mohon hubungi saya melalui WhatsApp
+untuk proses pengembalian.</div>
+      </div>
+      <button class="edit" data-target="pesan">✎</button>
+    </div>
+
+    <!-- Tombol WhatsApp -->
+    <a id="waBtn" class="wa" href="#" target="_blank">
+      <b>Hubungi Pemilik via WhatsApp</b>
+      <span>Klik tombol untuk langsung chat</span>
+    </a>
+
+    <hr>
+
+    <!-- Laporkan -->
+    <div class="report" id="reportBtn">
+      <div>
+        <b>Laporkan Penemuan HP</b>
+        <small>Isi formulir jika Anda tidak bisa menghubungi pemilik.</small>
+      </div>
+      <span>›</span>
+    </div>
+
+    <hr>
+    <p class="footer">Terima kasih atas kejujuran dan bantuannya ♥</p>
+    <button id="resetBtn" class="link-btn">Reset data</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
